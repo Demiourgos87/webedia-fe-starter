@@ -8,7 +8,7 @@ var cssOutput = 'css/master.css',
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'html'),
         filename: jsOutput
     },
     devtool: 'source-maps',
@@ -28,7 +28,7 @@ module.exports = {
     },
     devServer: {
         // ----- Webpack dev server options
-        contentBase: path.join(__dirname, "dist"),
+        contentBase: path.join(__dirname, "html"),
         compress: true,
         port: 3000,
         stats: 'errors-only',

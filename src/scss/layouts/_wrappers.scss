@@ -1,4 +1,13 @@
-//----- Wrappers
+// ----- Wrappers
+
 .l {
-    
+    width: 100%;
+    padding: 0 5rem; // Set design specific padding
+    @include breakpoint(overPhone) {
+        padding: 0 8rem; // Set design specific padding
+    }
+    @include breakpoint(desktop) {
+        max-width: $site-desk-design;
+        margin: auto;
+    }
 }
