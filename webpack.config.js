@@ -30,6 +30,7 @@ module.exports = {
     devServer: {
         // ----- Webpack dev server options
         contentBase: path.join(__dirname, outputDir),
+        watchContentBase: true,
         compress: true,
         port: 3000,
         stats: 'errors-only',
