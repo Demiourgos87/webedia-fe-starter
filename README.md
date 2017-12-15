@@ -11,7 +11,7 @@ yarn install
 ## Commands:
 * ```yarn run dev``` - Run webpack-dev-server for development mode
 * ```yarn run build``` - Compiles code once, and exits
-* ```yarn run prod``` - Run webpack in development mode, includes css and javascript master file minification  
+* ```yarn run prod``` - Run webpack in production mode, includes css and javascript master file minification  
 
 ## Command simplification  
 If working on Linux or Mac, in order to simplify the commands, you can add an alias to your .bashrc(or .zshrc). Navigate to home folder in the terminal, type ```nano .bashrc``` (or .zshrc).  
