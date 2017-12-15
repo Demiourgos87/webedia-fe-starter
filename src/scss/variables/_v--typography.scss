@@ -1,0 +1,39 @@
+//----- Variables / Typography
+
+//------FONT-FACE
+// @include fontFace (FontName, fontFolder, 700, italic);
+@include fontFace (Hello-Type-Regular, Hello Type/Hello Type Regular/HelloType, 400, normal, woff woff2);
+@include fontFace (Hello-Type-Bold, Hello Type/Hello Type Bold/HelloType, 700, normal, woff woff2);
+@include fontFace (Sketch, Sketch/Sketch, normal, normal, woff woff2);
+
+//------FONT FAMILY VARIBALE
+$fontDefault            : Arial, sans-serif;
+// $ff == $font-family
+$ff-main-regular       : 'Hello-Type-Regular', $fontDefault;
+$ff-main-bold          : 'Hello-Type-Bold', $fontDefault;
+$ff-secondary          : 'Sketch', $fontDefault;
+
+//----- Font size
+$font-size-base         : 10px;
+
+//------GLOBAL FONT SETTINGS
+html {
+  @include font-size-vw($font-size-base, $font-size-base);
+}
+body {
+    font-family: $ff-main-regular;
+    -webkit-font-smoothing: antialiased;
+
+    &.fixed {
+      @include breakpoint(phone) {
+        overflow: hidden;
+      }
+    }
+}
+
+h1 {}
+h2 {}
+a {
+    text-decoration: none;
+}
+p {}

@@ -1,0 +1,25 @@
+{
+  "name": "webpack-yarn",
+  "version": "0.0.1",
+  "description": "Webpack FrontEnd starter with yarn",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch & webpack-dev-server --progress --colors",
+    "prod": "webpack -p"
+  },
+  "author": "Bojan Knezevic",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.9",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
