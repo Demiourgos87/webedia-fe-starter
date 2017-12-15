@@ -3,55 +3,19 @@
 $color-white                : #fff;
 $color-alabaster            : #fafafa;
 $color-gallery              : #f0f0f0;
-$color-porcelain            : #f7f9f9;
+$color-gray-light           : #e5e5e5;
 $color-dusty-gray           : #999999;
+$color-black                : #000;
 $color-abbey                : #0d0d0d;
 $color-cod-gray             : #111111;
-$color-black                : #000;
-$color-matisse              : #176D8C;
-$color-deep-cerulean        : #0081A8;
-$color-turquoise            : #b4f4f9;
-$color-bright-turquoise     : #0acfdf;
-$color-mandy                : #df5050;
-$color-geraldine            : #fb7979;
-$color-international-orange : #ff4e00;
-$color-green-haze           : #00aa55;
-$color-gray-light           : #e5e5e5;
 
 
 $colors           : (
   buttons         : ( //----- Buttons colors
     primary       : $color-black,
     secondary     : $color-white
-  ),
-  section-titles  : ( //----- Section titles
-    primary       : #ff996c
-  ),
-  search         : ( //----- Search colors
-    mob-bg       : #016483
-  ),
-  pagination     : ( //----- Pagination colors
-    border       : #d9d9d9
-  ),
-  article        : ( //----- Article colors
-    static-block : #deebef,
-    video-bg     : #ffebec,
-    video-h-big  : #fcdfe1,
-    video-h-big-d: #e0e0e0,
-    ques-bg-1    : #005a7f,
-    ques-bg-2    : #0081a8,
-    ques-dots    : #015675
-  ),
-  lr             : ( // Long Read
-    dot          : #e3e3e3
-  ),
-  social         : (
-    facebook     : #3b5999,
-    twitter      : #55acee,
-    linkedin     : #0077B5
   )
 );
-
 
 // //----- Variables used in the @for loop for different brand colors
 // // Example... Socials

@@ -1,13 +1,13 @@
 //----- Variables / Paths
 
-// $fontBaseUrl      : "http://static1.webedia.fr/fonts/";
+// ----- Paths for production (comment out during development)
 //$localFontBase    : "/_common/fonts/";
-$icomoon-font-path: "/_common/fonts/svg-font";
-$localFontBase    : "https://static1.webedia.fr/fonts/";
-$imgBaseUrl       : "/_common/images";
+// $localFontBase    : "https://static1.webedia.fr/fonts/";
+// $imgBaseUrl       : "/_common/images";
+// $icomoon-font-path: "/_common/fonts/svg-font";
 
 
-
-// $localFontBase       : "/assets/fonts/";
-// $imgBaseUrl          : "/assets/images";
-// $icomoon-font-path   : "/assets/fonts/svg-font";
+// ----- Paths for development (comment out on production server)
+$localFontBase       : "/assets/fonts/";
+$imgBaseUrl          : "/assets/images";
+$icomoon-font-path   : "/assets/fonts/svg-font";
