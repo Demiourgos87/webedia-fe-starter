@@ -4,7 +4,8 @@
   "description": "Webpack FrontEnd starter with yarn",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch & webpack-dev-server --progress --colors",
+    "dev": "webpack-dev-server --hot --progress --colors",
+    "build": "webpack",
     "prod": "webpack -p"
   },
   "author": "Bojan Knezevic",
@@ -13,6 +14,7 @@
     "webpack": "^3.10.0"
   },
   "devDependencies": {
+    "css-hot-loader": "^1.3.4",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "jquery": "^3.2.1",
