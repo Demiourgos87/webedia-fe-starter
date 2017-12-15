@@ -12,16 +12,29 @@ module.exports = {
         path: path.resolve(__dirname, outputDir),
         filename: jsOutput
     },
-    devtool: 'source-maps',
+    devtool: 'source-map',
     module: {
         rules: [
             // ----- SCSS compiling
             { test: /\.scss$/, use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
                     fallback: "style-loader",
                     use: [
-                        { loader: "css-loader", options: { importLoaders: 1 } },
-                        "postcss-loader",
-                        "sass-loader"
+                        {
+                            loader: "css-loader",
+                            options: {
+                                // importLoaders: 1,
+                                sourceMap: true
+                            }
+                        },
+                        { loader: "postcss-loader", options: { sourceMap: true } },
+                        {
+                            loader: "sass-loader",
+                            options: {
+                                sourceMap: true,
+                                outputStyle: "expanded",
+                                sourceMapContents: true
+                            }
+                        }
                     ]
                 }))
             }
@@ -38,6 +51,9 @@ module.exports = {
     },
     plugins: [
         // ----- Output compiled css file
-        new ExtractTextPlugin(cssOutput),
+        new ExtractTextPlugin({
+            filename: cssOutput,
+            allChunks: true
+        }),
     ]
 }
