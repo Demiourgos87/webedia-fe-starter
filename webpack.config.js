@@ -16,6 +16,13 @@ module.exports = {
     devtool: 'source-map',
     module: {
         rules: [
+            // ----- JS ES2015 compiling
+            { test: /\.js$/, exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: { presets: ['babel-preset-env'] }
+                }
+            },
             // ----- SCSS compiling
             { test: /\.scss$/, use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
                     fallback: "style-loader",
@@ -55,4 +62,4 @@ module.exports = {
             suppressSuccess: false
         })
     ]
-}
+};
