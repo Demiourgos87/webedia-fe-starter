@@ -1,5 +1,6 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin"),
+    WebpackBuildNotifierPlugin = require('webpack-build-notifier'),
+    path = require('path');
 
 // ----- Output file paths
 var outputDir = 'html/',
@@ -49,5 +50,9 @@ module.exports = {
             filename: cssOutput,
             allChunks: true
         }),
+        new WebpackBuildNotifierPlugin({
+            title: "Webpack",
+            suppressSuccess: false
+        })
     ]
 }
