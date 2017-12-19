@@ -3,15 +3,14 @@
 ## Usage:  
 Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/install)
 
-### Install required modules  
-```
-yarn install
-```
+### Install required modules
+
+Navigate to project directory and run: ```yarn install```
 
 ### Commands:
 * ```yarn run dev``` - Run webpack-dev-server for development mode
-* ```yarn run build``` - Compiles code once, and exits
-* ```yarn run prod``` - Run webpack in production mode, includes css and javascript master file minification
+* ```yarn run build``` - Compile code once, and exit
+* ```yarn run prod``` - Compile code in production mode, includes css and javascript master file minification
 
 ### Command simplification
 If working on Linux or Mac, in order to simplify the commands, you can add an alias to your shell configuration file (.bashrc, .zshrc, etc). Navigate to home folder in the terminal, type ```nano .bashrc``` (or .zshrc).

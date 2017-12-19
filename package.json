@@ -4,9 +4,9 @@
   "description": "Webpack FrontEnd starter with yarn",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --progress --colors",
-    "build": "webpack",
-    "prod": "webpack -p"
+    "dev": "webpack-dev-server --hot --progress --colors --config=dev.config.js",
+    "build": "webpack --config=build.config.js",
+    "prod": "webpack -p --config=build.config.js"
   },
   "author": "Bojan Knezevic",
   "license": "MIT",
