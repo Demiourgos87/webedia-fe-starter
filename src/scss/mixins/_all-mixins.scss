@@ -1,29 +1,13 @@
-//----- Mixins
+// ----- Mixins
+
 @import 'm--breakpoints';
-@import 'm--vendor-prefixes';
 
 @import	'm--font-face';
 @import	'm--font-size';
 @import	'm--line-height';
 @import "m--letter-spacing";
-@import "m--gradient-text";
-@import "m--gradient-bg";
 
 @import	'm--placeholder';
-@import 'm--truncate-text';
 
-@import 'm--grid';
 @import 'm--absolute';
-@import 'm--center-block';
-@import 'm--rotated';
-
-@import 'm--hide';
 @import 'm--clearfix';
-@import 'm--invisible';
-
-@import 'm--keyframes';
-
-@import 'm--close';
-@import 'm--plus';
-@import 'm--triangle';
-@import 'm--arrow';
