@@ -5,7 +5,8 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin"),
 // ----- Output file paths
 var outputDir = 'html/',
     cssOutput = 'css/master.css',
-    jsOutput = '_common/javascript/webedia/master.js';
+    jsOutput = '_common/javascript/webedia/master.js',
+    fontOutput = '../_common/fonts/';
 
 module.exports = {
     entry: './src/js/app.js',
@@ -39,6 +40,19 @@ module.exports = {
                         }
                     ]
                 }))
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: fontOutput,
+                        name: "[name].[ext]",
+                        emitFile: false
+                    }
+                  }
+                ]
             }
         ]
     },

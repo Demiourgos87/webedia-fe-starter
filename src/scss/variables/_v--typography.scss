@@ -4,17 +4,20 @@
 
 // Examples
 // @include fontFace (FontName, fontFolder, 700, italic);
-// @include fontFace (Hello-Type-Regular, Hello Type/Hello Type Regular/HelloType, 400, normal, woff woff2);
-// @include fontFace (Hello-Type-Bold, Hello Type/Hello Type Bold/HelloType, 700, normal, woff woff2);
-// @include fontFace (Sketch, Sketch/Sketch, normal, normal, woff woff2);
+@include fontFace(Roboto-Regular, Roboto-Regular, 400, normal, ttf);
+@include fontFace(Roboto-Bold, Roboto-Bold, 700, normal, ttf);
+@include fontFace(Roboto-Black, Roboto-Black, 700, normal, ttf);
+@include fontFace(Roboto-Italic, Roboto-Italic, 700, normal, ttf);
 
 //------FONT FAMILY VARIBALE
-$fontDefault            : Arial, sans-serif;
+$fontDefault             : Arial, sans-serif;
+
 // Examples
 // $ff == $font-family
-// $ff-main-regular       : 'Hello-Type-Regular', $fontDefault;
-// $ff-main-bold          : 'Hello-Type-Bold', $fontDefault;
-// $ff-secondary          : 'Sketch', $fontDefault;
+$ff-main-regular         : 'Roboto-Regular', $fontDefault;
+$ff-main-bold            : 'Roboto-Bold', $fontDefault;
+$ff-main-black           : 'Roboto-Black', $fontDefault;
+$ff-main-italic          : 'Roboto-Italic', $fontDefault;
 
 //----- Font size
 $font-size-base         : 10px;
@@ -24,7 +27,7 @@ html {
   @include font-size-vw($font-size-base, $font-size-base);
 }
 body {
-    font-family: $fontDefault;
+    font-family: $ff-main-regular;
     -webkit-font-smoothing: antialiased;
 
     &.fixed {
