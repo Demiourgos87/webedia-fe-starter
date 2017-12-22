@@ -8,7 +8,7 @@ FE-boilerplate is made as a base for standalone projects.
 03. [Mixins](#mixins)
 04. [Variables](#variables)
 05. [Layouts](#layouts)
-06. [Media objects](#objects)
+06. [Objects](#objects)
 07. [Blocks](#blocks)
 08. [Components](#components)
 09. [Pages](#pages)
@@ -71,8 +71,8 @@ FE-boilerplate is made as a base for standalone projects.
 
 
 # <a name="objects"></a>
-### Layouts
-###### *Functions folder house functions that can be applied to any project.*
+### Objects
+###### *Objects folder house files related to media objects.*
 
 > Can be included partially.
 * Project specific media objects.
