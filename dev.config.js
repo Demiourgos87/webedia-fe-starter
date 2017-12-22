@@ -5,10 +5,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin"),
 // ----- Output file paths
 var outputDir = 'html/',
     cssOutput = 'css/master.css',
-    jsOutput = 'js/master.js';
+    jsOutput = '_common/javascript/webedia/master.js';
 
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/js/app.js',
     output: {
         path: path.resolve(__dirname, outputDir),
         filename: jsOutput

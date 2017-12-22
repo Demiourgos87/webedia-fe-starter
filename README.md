@@ -8,6 +8,10 @@ Install webpack cli globally on your machine ```yarn add webpack``` (on Linux, m
 * Clone the repository ```git clone <repo url>```
 * Navigate to project directory and run ```yarn install``` to install required modules
 
+### Compilation paths:
+* CSS (master.css) is compiled to: *html/css/*
+* Javascript (master.js) is compiled to: *html/_common/javascript/webedia/*
+
 ### Commands:
 * ```yarn run dev``` - Runs webpack-dev-server for development mode
 * ```yarn run build``` - Compile code once, and exit

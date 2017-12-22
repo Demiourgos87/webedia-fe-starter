@@ -1,6 +1,22 @@
-.DS_Store
-Thumbs.db
+/html/library
+*.serialize
+*.bak
+*.bk
+*.old
+.svn
 node_modules/
+vendor/
 
-html/css/
-html/js/
+# OS junk files
+[Tt]humbs.db
+*.DS_Store
+*.swp
+
+# IDE junk files
+.project
+.buildpath
+.settings
+.idea
+
+html/css/master.css*
+html/_common/javascript/webedia/master.js*
