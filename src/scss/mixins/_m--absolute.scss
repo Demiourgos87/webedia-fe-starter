@@ -6,14 +6,14 @@
   @if $position == 'center' {
     top: #{$per};
     left: #{$per};
-		@include vendor-prefixes(transform, translate(-#{$per}, -#{$per}));
+	transform: translate(-#{$per}, -#{$per});
   }
   @else if $position == 'center-vertical' {
     top: #{$per};
-		@include vendor-prefixes(transform, translateY(-#{$per}));
+	transform: translateY(-#{$per});
   }
   @else if $position == 'center-horizontal' {
     left: #{$per};
-		@include vendor-prefixes(transform, translateX(-#{$per}));
+	transform: translateX(-#{$per});
   }
 }
