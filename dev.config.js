@@ -44,20 +44,20 @@ module.exports = {
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
                 use: [
-                  {
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: fontOutput,
-                        name: "[name].[ext]",
-                        emitFile: false
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: fontOutput,
+                            name: "[name].[ext]",
+                            emitFile: false
+                        }
                     }
-                  }
                 ]
             }
         ]
     },
+    // ----- Webpack dev server options
     devServer: {
-        // ----- Webpack dev server options
         contentBase: path.join(__dirname, outputDir),
         watchContentBase: true,
         compress: true,

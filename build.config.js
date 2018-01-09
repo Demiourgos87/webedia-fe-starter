@@ -29,19 +29,17 @@ module.exports = {
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
                 use: [
-                  {
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: fontOutput,
-                        name: "[name].[ext]",
-                        emitFile: false
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: fontOutput,
+                            name: "[name].[ext]",
+                            emitFile: false
+                        }
                     }
-                  }
                 ]
             }
         ]
     },
-    plugins: [
-        new ExtractTextPlugin(cssOutput)
-    ]
+    plugins: [ new ExtractTextPlugin(cssOutput) ]
 };
