@@ -6,7 +6,6 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin"),
 var outputDir = 'html/',
     cssOutput = 'css/master.css',
     jsOutput = '_common/javascript/webedia/master.js';
-    // fontOutput = '../_common/fonts/';
 
 module.exports = {
     entry: './src/js/app.js',
