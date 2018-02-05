@@ -8,6 +8,13 @@ Install webpack cli globally on your machine ```yarn add webpack``` (on Linux, m
 * Clone the repository ```git clone <repo url>```
 * Navigate to project directory and run ```yarn install``` to install required modules
 
+## Project setup:
+* Define design specific dimensions variables at *src/scss/variables/_v--dimensions.scss*
+* Adjust variables and mixins to meet the design specifics; for example, if there is no design for tablet, delete the additional argument called in ```font-size-vw()``` in *src/scss/variables/_v--typography.scss* (also delete the additional argument from ```font-size-vw()``` mixin in *src/scss/mixins/_m--font-size.scss*), and delete tablet entries from the font-size and line-height mixins
+* Define fonts and font variables in *src/scss/variables/_v--typography.scss*
+* Adjust base wrappers in *src/scss/layouts/_wrappers.scss*
+* Code away
+
 ### Assets folders:
 *Put assets here:*
 * Fonts: *html/_common/fonts/*
@@ -16,6 +23,7 @@ Install webpack cli globally on your machine ```yarn add webpack``` (on Linux, m
 ### Compilation paths:
 * CSS (master.css) is compiled to: *html/css/*
 * Javascript (master.js) is compiled to: *html/_common/javascript/webedia/*
+
 
 ### Commands:
 * ```yarn run dev``` - Runs webpack-dev-server for development mode
