@@ -1,7 +1,7 @@
 # Webpack FE starter using yarn  
 
 ## Usage  
-Install webpack cli globally on your machine ```npm install -g webpack``` (on Linux, may require ```sudo```)
+Install webpack cli globally on your machine ```npm install -g webpack``` (on Linux, may require ```sudo```)  
 Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/install)  
 
 ## Development setup:
