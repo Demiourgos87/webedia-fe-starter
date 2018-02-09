@@ -21,18 +21,18 @@ Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/instal
 * Images: *html/_common/images/*
 
 ### Compilation paths:
-* CSS (master.css) is compiled to: *html/css/*
-* Javascript (master.js) is compiled to: *html/_common/javascript/webedia/*
+* CSS (styles.css) is compiled to: *html/css/*
+* Javascript (main.js) is compiled to: *html/_common/javascript/webedia/*
 
 ### Commands:
 * ```yarn run dev-local``` - Runs webpack-dev-server for development mode, use when working on local static project
 * ```yarn run dev-live``` - Runs webpack in watch mode, use when working on the development server in vagrant
-* ```yarn run build``` - Compile code once, and exit
-* ```yarn run prod``` - Compile code for production, includes css and javascript master file minification
+* ```yarn run build``` - Bundle code once, and exit
+* ```yarn run prod``` - Bundle code for production, includes css and javascript minification
 
 ### Command simplification:
 If working on Linux or Mac, in order to simplify the commands, you can add an alias to your shell configuration file (.bashrc, .zshrc, etc). Navigate to home folder in the terminal, type ```nano .bashrc``` (or .zshrc).
 
-At the end of the file, add ```alias dev='yarn run dev-local'```. Restart the terminal, and now you can type only ```dev``` in the project folder, to start the webpack dev server. If needed, create aliases for other commands as well.
+At the end of the file, add ```alias dev-local='yarn run dev-local'```. Restart the terminal, and now you can type only ```dev``` in the project folder, to start the webpack dev server. If needed, create aliases for other commands as well.
 
 **Note: Make sure you don't name your alias the same as some other system command, and that it does not conflict with other alias names.**
