@@ -18,5 +18,5 @@ vendor/
 .settings
 .idea
 
-html/css/*
+html/css/styles.css*
 html/_common/javascript/webedia/main.js*

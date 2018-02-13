@@ -4,7 +4,7 @@
   "description": "Webpack FrontEnd starter with yarn",
   "main": "index.js",
   "scripts": {
-    "dev-live": "webpack --watch --progress --config=build.config.js",
+    "dev-live": "webpack --watch --progress --config=dev.config.js",
     "dev-local": "webpack-dev-server --hot --progress --colors --config=dev.config.js",
     "build": "webpack --progress --config=build.config.js",
     "prod": "webpack -p --progress --config=build.config.js"
