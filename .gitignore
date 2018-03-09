@@ -18,5 +18,7 @@ vendor/
 .settings
 .idea
 
+# webpack generated files
 html/css/styles.css*
-html/_common/javascript/webedia/main.js*
+html/js/master.bundle.js*
+stats.json
