@@ -5,10 +5,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin"),
 // ----- Output file paths
 var outputDir = 'html/',
     cssOutput = 'css/styles.css',
-    jsOutput = '_common/javascript/webedia/main.js';
+    jsOutput = 'js/master.bundle.js';
 
 module.exports = {
-    entry: './src/js/app.js',
+    entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, outputDir),
         filename: jsOutput
@@ -17,14 +17,18 @@ module.exports = {
     module: {
         rules: [
             // ----- JS ES2015 compiling
-            { test: /\.js$/, exclude: /(node_modules|bower_components)/,
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
                     options: { presets: ['babel-preset-env'] }
                 }
             },
             // ----- SCSS compiling
-            { test: /\.scss$/, use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+            {
+                test: /\.scss$/,
+                use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
                     fallback: "style-loader",
                     use: [
                         { loader: "css-loader", options: { sourceMap: true, url: false } },
@@ -48,7 +52,11 @@ module.exports = {
         watchContentBase: true,
         compress: true,
         port: 3300,
-        stats: 'errors-only',
+        stats: {
+            all: false,
+            errors: true,
+            warnings: true
+        },
         open: true
     },
     plugins: [

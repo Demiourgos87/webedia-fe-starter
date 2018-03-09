@@ -3,11 +3,9 @@
 //------FONT-FACE
 
 // Examples
-// @include fontFace (FontName, fontFolder, 700, italic);
+// @include fontFace (FontName, fontFolder, 400, normal, <formats>(ex: woff ttf svg));
 @include fontFace(Roboto-Regular, Roboto-Regular, 400, normal, ttf);
-@include fontFace(Roboto-Bold, Roboto-Bold, 700, normal, ttf);
-@include fontFace(Roboto-Black, Roboto-Black, 700, normal, ttf);
-@include fontFace(Roboto-Italic, Roboto-Italic, 700, normal, ttf);
+@include fontFace(Roboto-Italic, Roboto-Italic, 400, normal, ttf);
 
 //------FONT FAMILY VARIBALE
 $fontDefault             : Arial, sans-serif;
@@ -15,8 +13,6 @@ $fontDefault             : Arial, sans-serif;
 // Examples
 // $ff == $font-family
 $ff-main-regular         : 'Roboto-Regular', $fontDefault;
-$ff-main-bold            : 'Roboto-Bold', $fontDefault;
-$ff-main-black           : 'Roboto-Black', $fontDefault;
 $ff-main-italic          : 'Roboto-Italic', $fontDefault;
 
 //----- Font size
