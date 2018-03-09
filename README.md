@@ -1,14 +1,14 @@
 # Webpack FE starter using yarn  
 
 ## Usage  
-Install webpack cli globally on your machine ```npm install -g webpack``` (on Linux, may require ```sudo```)  
+Install webpack cli globally on your machine ```npm install -g webpack webpack-cli``` (on Linux, may require ```sudo```)  
 Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/install)  
 
-## Development setup:
+## Development setup
 * Clone the repository ```git clone <repo url>```
 * Navigate to project directory and run ```yarn install``` to install required modules
 
-## Project setup:
+## Project setup
 * Define design specific dimensions variables at **src/scss/variables/_v--dimensions.scss**
 * Adjust variables and mixins to meet the design specifics; for example, if there is no design for tablet, delete the additional argument called in ```font-size-vw()``` in **src/scss/variables/_v--typography.scss** (also delete the additional argument from ```font-size-vw()``` mixin in **src/scss/mixins/_m--font-size.scss**), and delete tablet entries from the font-size and line-height mixins
 * Define fonts and font variables in **src/scss/variables/_v--typography.scss**
@@ -17,12 +17,16 @@ Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/instal
 
 ### Assets folders:
 **Put assets here:**
-* Fonts: **html/_common/fonts/**
-* Images: **html/_common/images/**
+* Fonts: **html/assets/fonts/**
+* Images: **html/assets/images/**
 
 ### Compilation paths:
 * CSS (styles.css) is compiled to: **html/css/**
-* Javascript (main.js) is compiled to: **html/_common/javascript/webedia/**
+* Javascript (master.bundle.js) is compiled to: **html/js/**
+
+#### Important note about paths:
+* For JavaScript, require assets relative to the path of the file you are requiring them from
+* For SCSS, require assets relative to the path of the main **style.scss**
 
 ### Commands:
 * ```yarn run dev-local``` - Runs webpack-dev-server for development mode, use when working on local static project
@@ -35,4 +39,11 @@ If working on Linux or Mac, in order to simplify the commands, you can add an al
 
 At the end of the file, add ```alias dev-local='yarn run dev-local'```. Restart the terminal, and now you can type only ```dev``` in the project folder, to start the webpack dev server. If needed, create aliases for other commands as well.
 
-**Note: Make sure you don't name your alias the same as some other system command, and that it does not conflict with other alias names.**
+**Note: Make sure you don't name your alias the same as some other system command, and that it does not conflict with other alias's names.**
+
+## Bundle analysis
+A tool for bundle analysis, provides useful information about the state of the bundle, errors, warnings, module interconnectivity, etc.
+
+1. Generate webpack stats file, from project root enter ```webpack --profile --json --config=build.config.js > stats.json```
+2. Go to: [http://webpack.github.io/analyse/](http://webpack.github.io/analyse/)
+3. Upload the generated stats.json file
