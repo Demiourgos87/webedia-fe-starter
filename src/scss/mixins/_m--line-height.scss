@@ -10,6 +10,6 @@
         line-height: cr($fz-tablet);
     }
     @include breakpoint(desktop) {
-        line-height: cr($fz-desktop)
+        line-height: cr($fz-desktop);
     }
 }

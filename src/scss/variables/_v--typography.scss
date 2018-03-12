@@ -3,6 +3,7 @@
 //------FONT-FACE
 
 // Examples
+// main path to font directory is defined at src/scss/mixins/_m--font-face.scss
 // @include fontFace (FontName, fontFolder, 400, normal, <formats>(ex: woff ttf svg));
 @include fontFace(Roboto-Regular, Roboto-Regular, 400, normal, ttf);
 @include fontFace(Roboto-Italic, Roboto-Italic, 400, normal, ttf);
