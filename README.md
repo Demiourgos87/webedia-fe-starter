@@ -37,7 +37,7 @@ Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/instal
 ### Command simplification:
 If working on Linux or Mac, in order to simplify the commands, you can add an alias to your shell configuration file (.bashrc, .zshrc, etc). Navigate to home folder in the terminal, type ```nano .bashrc``` (or .zshrc).
 
-At the end of the file, add ```alias dev-local='yarn run dev-local'```. Restart the terminal, and now you can type only ```dev``` in the project folder, to start the webpack dev server. If needed, create aliases for other commands as well.
+At the end of the file, add ```alias dev-local='yarn run dev-local'```. Restart the terminal, and now you can type only ```dev-local``` in the project folder, to start the webpack dev server. If needed, create aliases for other commands as well.
 
 **Note: Make sure you don't name your alias the same as some other system command, and that it does not conflict with other alias's names.**
 
